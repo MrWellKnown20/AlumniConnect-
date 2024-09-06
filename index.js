@@ -12,6 +12,18 @@ app.use(express.static(path.join(__dirname,"public")))
 app.get("/",(req,res)=>{
     console.log("working")
 })
+app.get("/",(req,res)=>{
+    console.log("working")
+})
+app.get("/",(req,res)=>{
+    console.log("working")
+})
+app.get("/",(req,res)=>{
+    console.log("working")
+})
+app.get("/",(req,res)=>{
+    console.log("working")
+})
 
 app.post("/login",(req,responce)=>{
     let {email,password} = req.body;
