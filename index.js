@@ -13,6 +13,10 @@ app.get("/",(req,res)=>{
     console.log("working")
 })
 
+app.post('/register',(req,res)=>{
+  console.log("hoooo")
+})
+
 app.post("/login",(req,responce)=>{
     let {email,password} = req.body;
     const isavailable =Userdatabase.findOne({"email":email})
